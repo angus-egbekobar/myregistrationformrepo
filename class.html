@@ -43,3 +43,171 @@
   </form>
 </body>
 </html>
+<!--   ➤➤➤In previous steps you used an anchor element to turn text into a link. Other types of content can also be turned into a link by wrapping it in anchor tags.
+e.g
+ <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
+ <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+     
+  ➤➤➤When you add a lower rank heading element to the page, it's implied that you're starting a new subsection.
+
+  ➤➤➤The figure element represents self-contained content and will allow you to associate an image with a caption.
+A figure caption (figcaption) element is used to add a caption to describe the image contained within the figure element
+<figcaption>
+ 
+  ➤➤➤ The <em> tag is used to define emphasized text. The content inside is typically displayed in italic
+  ➤➤➤The <strong> tag is used to define text with strong importance. The content inside is typically displayed in bold.
+
+  ➤➤➤The action attribute indicates where(location) form data should be sent. For example, <form action="/submit-url"></form> tells the browser that the form data should be sent to the path /submit-url.
+
+The method attribute specifies how to send form-data to the URL specified in the action attribute. The form-data can be sent via a GET request as URL parameters (with method="get") or via a POST request as data in the request body (with method="post").
+
+➤In order for a form's data to be accessed by the location specified in the action attribute, you must give the text field a name attribute and assign it a value to represent the data being submitted. For example, you could use the following syntax for an email address text field: <input type="text" name="email">.
+➤ by default, the form  does not know the radio inputs(radio inputs which a user is choose from 2 more radio inputs) are related.To relate the radio inputs, give them the same name attribute. Now, it is not possible to select both radio inputs at the same time. a user can only choose one now.
+➤ With form submissions, it is useful, and good practice, to provide each submittable element with a name attribute. This attribute is used to identify the element in the form submission.
+➤What if you wanted to allow a user to upload a profile picture? Well, the input type file allows just that.
+➤Adding a dropdown to the form is easy with the select element. The select element is a container for a group of option elements, and the option element acts as a label for each dropdown option. Submitting the form with an option selected would not send a useful value to the server. As such, each option needs to be given a value attribute. Without which, the text content of the option will be submitted to the server.
+
+➤The <a target> attribute specifies where to open the linked document in an a (anchor) tag..A target attribute with the value of “_blank” opens the linked document in a new window or tab.e.g    <p>See more <a target="_blank"  href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
+
+A target attribute with the value of “_self” opens the linked document in the same frame as it was clicked (this is the default and usually does not need to be specified). e.g <a href="https://www.freecodecamp.org" target="_self">freeCodeCamp</a>
+
+➤article elements commonly contain multiple elements that have related information.
+➤To prevent a user from submitting your form when required information is still missing or has not been provided in d form, you need to add the required attribute to an input element. There's no need to set a value to the required attribute. Instead, just add the word required to the input element, making sure there is space between it and other attributes.
+
+➤The default behavior of clicking a form button without any attributes submits the form to the location specified in the form's action attribute.
+
+➤When elements have multiple attributes, the order of the attributes doesn't matter.
+
+➤Notice that both radio buttons can be selected at the same time. To make it so selecting one radio button automatically deselects the other, both buttons must have a name attribute with the SAME VALUE
+e.g  <label><input id="indoor" type="radio"  name="indoor-outdoor"     value="indoor"> Indoor</label>
+       <label><input id="outdoor" type="radio" name="indoor-outdoor"    value="outdoor"> Outdoor</label>
+
+➤Like radio buttons, form data for selected checkboxes are name / value attribute pairs. While the value attribute is optional, it's best practice to include it with any checkboxes or radio buttons on the page.
+
+➤ Also u might not notice anything in d browser when u give ur checkbox d name attribute, but  doing this makes it easier for a server to process your web form, especially when there are multiple checkboxes.
+
+➤In order to make a checkbox checked or radio button selected by default, you need to add the checked attribute to it. There's no need to set a value to the checked attribute. Instead, just add the word checked to the input element, making sure there is space between it and other attributes.
+
+➤ The fieldset element is used to group related inputs and labels together in a web form. fieldset elements are block-level elements, meaning that they appear on a new line.
+
+➤ The legend element acts as a caption for the content in the fieldset element. It gives users context about what they should enter into that part of the form.
+ This tag is used to define the caption for the <fieldset> element.  Your legend element should be the first element right below fieldset element's opening tag and before the first radio button's opening label tag
+
+e.g  <fieldset>
+            <legend>Is your cat an indoor or outdoor cat?</legend>
+            <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor"> Indoor</label>
+            <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+          </fieldset>
+
+<fieldset><legend>What's your cat's personality?</legend</fieldset>
+
+➤The goal now is to make the div not take up the entire width of the page. The CSS width property is perfect for this
+➤Change the width property's value to be 80%, to make it 80% the width of its parent element (body).
+➤Next, you want to center the div horizontally. You can do this by setting its margin-left and margin-right properties to auto. Think of the margin as invisible space around an element.
+
+padding is used to create room/space around an element
+
+inline elements like span tag,label tag.. inline-block elements only take up the width of their content. which means they are displayed side by side on the same line. To spread them out, add a width property . You could keep trying various percentages for the widths also for other css properties
+block-level elements take up the entire width of their parent element. examples are p,h1, etc
+
+Add a max-width property to the menu class with a value of 500px to prevent it from growing too wide.
+
+You can use an hr element to display a divider between sections of different content.
+
+You change properties of a link when the link has actually been visited by using a pseudo-selector that looks like a:visited { propertyName: propertyValue; }.
+
+You change properties of a link when the mouse hovers over them by using a pseudo-selector that looks like a:hover { propertyName: propertyValue; }.
+
+You change properties of a link when the link is actually being clicked by using a pseudo-selector that looks like a:active { propertyName: propertyValue; }.
+
+When the shorthand margin property has two values, it sets margin-top and margin-bottom to the first value, and margin-left and margin-right to the second value.
+
+In your .marker CSS rule, set the margin property to 10px auto.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Multiple classes can be added to an element by listing them in the class attribute and separating them with a space.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+There are two main color models: the additive RGB (red, green, blue) model used in electronic devices, and the subtractive CMYK (cyan, magenta, yellow, black) model used in print.
+
+In this project, you'll work with the RGB model. This means that colors begin as black, and change as different levels of red, green, and blue are introduced
+A function is a piece of code that can take an input and perform a specific action. The CSS rgb function accepts values, or arguments, for red, green, and blue, and produces a color:
+
+rgb(red, green, blue);
+Each red, green, and blue value is a number from 0 to 255. 0 means that there's 0% of that color, and is black.  255 means that there's 100% of that color.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Notice how your eyes are naturally drawn to the red color in the center? When designing a site, you can use this effect to draw attention to important headings, buttons, or links
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+A very common way to apply color to an element with CSS is with hexadecimal or hex values. While hex values sound complicated, they're really just another form of RGB values.
+
+Hex color values start with a # character and take six characters from 0-9 and A-F. The first PAIR of characters represent red, the second PAIR represent green, and the third PAIR represent blue. For example, #4B5320.
+
+You may already be familiar with decimal, or base 10 values, which go from 0 - 9. Hexadecimal, or base 16 values, go from 0 - 9, then A - F:
+
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F
+With hex colors, 00 is 0% of that color, and FF is 100%. So #00FF00 translates to 0% red, 100% green, and 0% blue, and is the same as rgb(0, 255, 0).
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+The CSS hsl function accepts 3 values: a number from 0 to 360 for hue, a percentage from 0 to 100 for saturation, and a percentage from 0 to 100 for lightness.
+
+If you imagine a color wheel, the hue red is at 0 degrees, green is at 120 degrees, and blue is at 240 degrees.
+
+Saturation is the intensity of a color from 0%, or gray, to 100% for pure color. You must add the percent sign % to the saturation and lightness values.
+
+Lightness is how bright a color appears, from 0%, or complete black, to 100%, complete white, with 50% being neutral.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+You've learned a few ways to set flat colors in CSS, but you can also use a color transition, or gradient, on an element.
+
+A gradient is when one color transitions into another. The CSS linear-gradient FUNCTION lets you control the direction of the transition along a line, and which colors are used.
+
+One thing to remember is that the linear-gradient function actually creates an image element, and is usually PAIRED with the background property which can accept an image as a value.(Is background color and background same in CSS?
+background is a shorthand property that allows you to set all the background properties (including the background-color ) in one line. On the other hand, background-color property sets the color of the background of an element.)
+
+The linear-gradient function is very flexible -- here is the basic syntax you'll use in this tutorial:
+linear-gradient(gradientDirection, color1, color2, ...);
+
+gradientDirection is the direction of the line used for the transition. color1 and color2 are color arguments, which are the colors that will be used in the transition itself. These can be any type of color, including color keywords, hex, rgb, or hsl. so the second argument of the linear gradient may be hex,rgb or hsl
+.red {
+  background: linear-gradient(90deg, rgb(255, 255, 0), rgb(0,255,0));
+}
+As you can see above, the linear-gradient function produced a smooth red-green gradient. While the linear-gradient function needs a minimum of two color arguments to work, it can accept many color arguments..
+
+.green {
+  background: linear-gradient(180deg, #55680D,#71F53E, #116C31);
+}
+
+As you can see above, the linear-gradient function accepted 3 colors arguments
+If no gradientDirection argument is provided to the linear-gradient function, it arranges colors from top to bottom, or along a 180 degree line, by default.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+With the CSS opacity property, you can control how opaque or transparent an element is. With the value 0, or 0%, the element will be completely transparent, and at 1.0, or 100%, the element will be completely opaque like it is by default.
+Another way to set the opacity for an element is with the alpha channel. Similar to the opacity property, the alpha channel controls how transparent or opaque a color is.
+To add an alpha channel to an rgb color, use the rgba function instead.
+
+The rgba function works just like the rgb function, but takes one more number from 0 to 1.0 for the alpha channel:
+rgba(redValue, greenValue, blueValue, alphaValue);
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+The box-shadow property lets you apply one or more shadows around an element. Here is basic syntax:
+
+box-shadow: offsetX  offsetY  color;
+
+Here's how the offsetX and offsetY values work:
+both offsetX and offsetY accept number values in px and other CSS units
+a positive offsetX value moves the shadow right and a negative value moves it left
+a positive offsetY value moves the shadow down and a negative value moves it up
+if you want a value of zero (0) for any or both offsetX and offsetY, you don't need to add a unit. Every browser understands that zero means no change.
+
+
+
+box-shadow: offsetX offsetY blurRadius color;
+If a blurRadius value isn't included, it defaults to 0 and produces sharp edges. The higher the value of blurRadius, the greater the blurring effect is.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+vh unit stands for viewport height, and is relative to 1% of the height of the viewport.
+
+The rem unit stands for root em, and is relative to the font size of the html element.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------by adding a minlength attribute with a value of 8 to the input type of password. prevents inputs of less than 8 characters being submitted.
+
+With type="password" you can use the pattern attribute to define a regular expression that the password must match to be considered valid.
+
+Add a pattern attribute to the password input element to require the input match: [a-z0-5]{8,}
+
+The above is a regular expression which matches eight or more lowercase letters or the digits 0 to 5. Then, remove the minlength attribute, and try it out. -->
